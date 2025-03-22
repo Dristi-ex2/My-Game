@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url('/Images/chose\ game\ wallpaper.jpg');
+            background-size: cover;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        img {
+            height: 200px;
+            border-radius: 50%;
+
+        }
+
+        button {
+            border-radius: 50%;
+            border: none;
+           
+            margin-top: 30px;
+        }
+
+        .parent{
+            display: flex;
+           gap: 20%;
+            margin-left: 20%;
+        }
+        
+        p{
+            text-align: center;
+            font-size: 20px;
+            color: #DAD2FF;
+        }
+    </style>
+    <h1>Choose your favourite Game</h1>
+    <div class="parent">
+        <div class="child1">
+            <button id="rock-paper-game"><img src="/Images/Rock game img.png"></button>
+            <p>Rock Paper Scissors Spock Lizard Game</p>
+        </div>
+
+        <div class="child2">
+            <button id="tic-tack-toe-game"><img src="/Images/Tic tack toe.png"></button>
+            <p>Tic Tack Toe</p>
+        </div>
+    </div>
+  
+    <script src="myjs.js"></script>
+    
+</body>
+
+</html>

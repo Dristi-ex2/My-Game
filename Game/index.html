@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Lizard Spock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <p class="welcome-para">Welcome to Rock, Paper, Scissors, Lizard, Spock!</p>
+
+    <div class="play-btn">
+        <button id="one-player">1P</button>
+        <button id="two-player">2P</button>
+
+    </div>
+    
+   
+        
+        <div id="choices">
+            <button class="btn-img" data-choice="rock"><img src="Images/r.png" alt="rock"></button>
+            <button class="btn-img" data-choice="paper"><img src="Images/p.png" alt="paper"></button>
+            <button class="btn-img" data-choice="scissors"><img src="Images/s.png" alt="scissors"></button>
+            <button class="btn-img" data-choice="lizard"><img src="Images/l.png" alt="lizard"></button>
+            <button class="btn-img" data-choice="spock"><img src="Images/sp.png" alt="spock"></button>
+        </div>
+        
+        <div id="selectionDisplay">
+                
+
+                <div id="user-score-container">
+                    <img id="userChoiceImage" src="" alt="User Choice">
+                    <span id="user-score-anim" class="score-anim">+1</span>
+                </div>
+                
+                <div id="comp-score-container">
+                    <img id="compChoiceImage" src="" alt="Computer Choice">
+                    <span id="comp-score-anim" class="score-anim">+1</span>
+                </div>
+                
+                <div id="draw-animation" class="score-anim">Draw!</div>
+                
+        </div>
+        
+       <div id="score-card">
+        <div class="score">
+            <div class="user">
+                <p id="user-score">0</p>
+                <p>You</p>
+            </div>
+
+            <div class="comp">
+                <p id="comp-score">0</p>
+                <p>Computer</p>
+            </div>
+        </div>
+
+         <p id="result"></p>
+
+        <!-- <button id="replay">Replay</button>
+        <button id="reset">Exit</button>  -->
+    </div>
+       
+    
+
+    <script src="myjs.js"></script>
+</body>
+</html>

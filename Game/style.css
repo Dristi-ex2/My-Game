@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/Images/welcome-rock.jpg);
+    background-size: cover;
+}
+
+.welcome-para {
+    color: #DAD2FF;
+    text-align: center;
+    font-size: 60px;
+    padding: 50px;
+}
+
+.play-btn{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+#one-player{
+    background-color: #578FCA;
+}
+#two-player{
+    background-color: green;
+}
+#one-player,#two-player{
+    padding: 20px;
+    border: 5px solid white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 35px;
+   
+}
+
+#btn:hover {
+    background: #e68900;
+}
+
+#choices {
+    display: none;
+    padding: 6%;
+    padding-left: 28%;
+}
+
+.btn-img {
+    border: none;
+    cursor: pointer;
+    background:none;
+    margin-left: 10px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
+}
+
+#selectionDisplay{
+    margin-left: 30%;
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+#selectionDisplay img{
+    width: 100px;
+    margin-left: 90px;
+    border-radius: 50px;
+}
+
+#score-card {
+    display: none;
+}
+
+.score{
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+    margin-left: 45%;
+    padding-top: 40px;
+    color: white;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* #replay,
+#reset {
+    padding: 10px 35px;
+    background-color: orange;
+    border: none;
+    font-size: 16px;
+    border-radius: 20px;
+    display: none;
+
+}
+
+#replay {
+    margin-left: 28%;
+    margin-top: 30px;
+}
+
+#reset {
+    margin-left: 30px;
+} */
+
+#user-score,
+#comp-score {
+    color: red;
+    font-size: 60px;
+}
+/* .................................................... */
+
+.score-anim {
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    color: green;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+#user-score-container, #comp-score-container {
+    position: relative;
+    display: inline-block;
+}
+
+#user-score-anim {
+    top: 10px;
+    left: 50%;
+    color: green;
+}
+
+#comp-score-anim {
+    top: 10px;
+    left: 50%;
+    color: yellow;
+}
+
+#draw-animation {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: orange;
+}
